@@ -38,9 +38,8 @@ Use the version 1.1 build artifact.
 Description=My Service
 
 [Service]
-#PIDFile=/tmp/shn.pid
+#PIDFile=/tmp/my-service.pid
 ExecStart=/usr/lib/jvm/java-1.8.0/bin/java -jar /tmp/my-service.jar
-#Type=notify 
 WatchdogSec=120
 Restart=on-failure
 Environment=FILELOC=/usr/bin/systemd-notify
